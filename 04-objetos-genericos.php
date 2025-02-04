@@ -41,6 +41,17 @@ echo "<p><mark>{$usuario->nome}</mark><p>"; // interpolação
     <h3>Analisando o array gerado a partir de um objeto</h3>
     <pre><?=var_dump($arrayUsuario)?></pre>
 
+    <h2>Convertendo (fazendo um casting) array associativo em objeto</h2>
+
+<?php
+// Array associativo com duas chaves (nome e sobrenome)
+$aluno = ["nome" => "Fulano", "sobrenome" => "dos Santos"];
+
+// Convertendo array para objeto
+$objAluno = (object) $aluno;
+?>
+    <h3>Analisando o objeto gerado a partir de um array</h3>
+    <pre><?=var_dump($objAluno)?></pre>
 
 
 </body>
