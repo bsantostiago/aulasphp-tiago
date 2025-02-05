@@ -23,3 +23,23 @@ Em seguida, mostre os valores de nome de usuario, email, idade e sexo de cada pe
  
 **Desafio:** destaque estes dois blocos de conteúdo usando CSS e mostre-os lado a lado usando flexbox.
  
+---
+
+## Exercício 01 PHP e HTML - 29/01/2025
+
+Dentro do **aulasphp**, crie uma pasta chamada **exercicios**.
+
+Nela, crie o arquivo **exercicio01.php** e faça as atividades abaixo.
+
+Criar **variáveis** e/ou **constantes** para:
+
+- Data de hoje
+- Nome de uma pessoa
+- Nome de um curso que esta pessoa faz
+- Carga horária deste curso
+- Limite de faltas
+
+Coloque dados nestas variáveis e mostre no HTML uma mensagem apresentando o nome da pessoa, o nome do curso, a carga horária do curso e o limite de faltas.
+ 
+Destaque alguns destes dados usando CSS (com classes ou inline).
+ 
