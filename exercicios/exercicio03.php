@@ -22,6 +22,8 @@ if($valorCompra > 5000){
 
 $valorFinal = $valorCompra - $valorCompra * $desconto;
 ?>
-<p>Valor final da compra é: <?=$valorFinal?></p>
+<p>Valor final da compra é: R$
+    <?=number_format($valorFinal, 2, ",", ".")?>
+</p>
 </body>
 </html>
