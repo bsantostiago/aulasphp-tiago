@@ -7,23 +7,22 @@
     <style>
         .comprar{color: red;}
         .urgente{ color: red; background-color: yellow;}
-        .normal{ color: darkgreen;}
+        .normal{ color: darkgreen; }
     </style>
 </head>
 <body>
     <h1>(VERSÃO 2) Estruturas condicionais</h1>
     <hr>
 
-    <h2>Simples usando <code>if</code></h2>    
+    <h2>Simples usando <code>if</code></h2> 
+
 <?php
 $numero = 5;
-
 if($numero > 1){
-    echo "<p>$numero é maior que 1</p>";
+?>
+    <p><?=$numero?> é maior que 1</p>
+<?php
 }
-
-// Sintaxe omitindo as chaves
-if($numero > 1) echo "<p>$numero é maior que 1</p>";
 ?>
     <hr>
     <h2>Composta usando <code>if/else</code></h2>
