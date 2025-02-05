@@ -10,16 +10,17 @@
 <?php
 // Entrada (simulada)
 $valorCompra = 8000;
-
 if($valorCompra > 5000){
-    $valorFinal = $valorCompra - $valorCompra * 0.15;
+    $desconto = 0.15;
 } elseif($valorCompra > 3000) {
-    $valorFinal = $valorCompra - $valorCompra * 0.10;
+    $desconto = 0.10;
 } elseif($valorCompra > 1000) {
-    $valorFinal = $valorCompra - $valorCompra * 0.05;
+    $desconto = 0.05;
 } else {
-    $valorFinal = $valorCompra;
+    $desconto = 0;
 }
+
+$valorFinal = $valorCompra - $valorCompra * $desconto;
 ?>
 <p>Valor final da compra é: <?=$valorFinal?></p>
 </body>
