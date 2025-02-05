@@ -26,7 +26,7 @@ if($numero > 1){
 if($numero > 1) echo "<p>$numero é maior que 1</p>";
 ?>
     <hr>
-    <h2>Composta</h2>
+    <h2>Composta usando <code>if/else</code></h2>
 <?php
 $produto = "Ultrabook Asus";
 $qtdEmEstoque = 4; // o que temos
