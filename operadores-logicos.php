@@ -12,6 +12,7 @@ if ($nota >= 7 && $frequencia >= 75) {
     echo "Aluno reprovado.";
 }
 
+echo "<br><br>";
 
 /* 2️⃣ Operador || (OU)
 👉 Retorna true se pelo menos uma das condições for verdadeira.
@@ -26,19 +27,23 @@ if ($clienteVIP || $temCupom) {
     echo "Sem desconto.";
 }
 
+echo "<br><br>";
 
 /* 3️⃣ Operador ! (NÃO)
 👉 Inverte o valor lógico de uma variável ou condição.
 
 Exemplo: Verifica se o usuário não está logado para exibir o botão de login. */
-$usuarioLogado = false;
+$usuarioLogado = true;
 
 if (!$usuarioLogado) {
     echo "Exibir botão de login.";
+    echo '<a href="">Login</a>';
 } else {
     echo "Bem-vindo de volta!";
+    echo '<a href="">Logout</a>';
 }
 
+echo "<br><br>";
 
 /* 4️⃣ Exemplo combinando &&, || e !
 📌 Enunciado:
@@ -48,7 +53,7 @@ $idade = 19;
 $acompanhadoDosPais = true;
 $estaBebado = true;
 
-if ( ($idade >= 18 || $acompanhadoDosPais) && !$estaBebado) {
+if (($idade >= 18 || $acompanhadoDosPais) && !$estaBebado) {
     echo "Entrada permitida!";
 } else {
     echo "Entrada negada.";
