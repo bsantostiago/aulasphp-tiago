@@ -1,5 +1,35 @@
 # Enunciados dos exercícios
 
+## Exercício 04 (Loop e Estrutura de Dados) - 06/02/2025
+Crie uma estrutura de dados (pode ser um array indexado, ou array associativo, ou array de objetos, ou matriz) com 6 nomes de linguagens e uma pequena descrição para cada.
+ 
+Exemplo:
+ 
+- HTML: Estruturação
+- CSS: Estilos
+- JS: Comportamentos
+- PHP: Back-End
+- SQL: Manipulação de dados
+- Java: Softwares
+ 
+Em seguida, use loop para iterar sobre esta estrutura de dados e exibir todos os dados em linhas de uma tabela HTML conforme exemplo abaixo:
+ 
+ID  | Linguagem   |   Descrição
+--- | ---------   |   --------
+1   | HTML        |   Estruturação
+2   | CSS         |   Estilos
+3   | JS          |   Comportamentos
+4   | PHP         |   Back-End
+5   | SQL         |   Manipulação de dados
+6   | Java        |   Softwares
+ 
+### Desafios:
+ 
+- Pense e implemente uma maneira de exibir um ID (fictício) para cada curso como primeira coluna da tabela.
+- Faça uma boa formatação CSS da tabela, usando recursos como linhas de cores alternadas e realce de cor ao passar o mouse em cada linha.
+
+---
+
 ## Exercício 03 (Condicionais) - 05/02/2025
 
 Em um novo arquivo **exercicio03.php**, crie um código PHP que permita calcular o valor final de uma compra aplicando descontos. Os critérios são:
