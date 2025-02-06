@@ -44,11 +44,11 @@ if (!$usuarioLogado) {
 📌 Enunciado:
 Para entrar em um evento, a pessoa precisa ser maior de 18 anos ou estar acompanhada dos pais.
 Não pode estar bêbada. */
-$idade = 16;
+$idade = 19;
 $acompanhadoDosPais = true;
-$estaBebado = false;
+$estaBebado = true;
 
-if (($idade >= 18 || $acompanhadoDosPais) && !$estaBebado) {
+if ( ($idade >= 18 || $acompanhadoDosPais) && !$estaBebado) {
     echo "Entrada permitida!";
 } else {
     echo "Entrada negada.";
