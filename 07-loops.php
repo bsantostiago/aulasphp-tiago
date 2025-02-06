@@ -78,8 +78,23 @@ $meses = array(
 <?php } ?>    
 </ol>
 
+    <hr>
 
+    <h2>FOREACH (PARA CADA)</h2>
+    <p>Versão simplificada do loop for e bem mais fácil de usar com arrays 
+    e objetos.</p>
 
+    <h3>Acessando array indexado/numérico</h3>
+<?php
+$alunos = ["Denis", "Paulo", "Heloisa"];
+
+//      (nomeDoArray as nomeDeVariavelDeAcesso)
+foreach( $alunos as $aluno ) {
+?>
+    <p>Nome: <?=$aluno?></p>
+<?php
+}
+?>
 
 
 
