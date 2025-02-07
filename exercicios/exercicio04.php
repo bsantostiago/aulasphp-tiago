@@ -6,9 +6,9 @@
     <title>Exercício 04 (ok)</title>
     <style>
        table {
-  width: 100%;
+  width: 70%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 20px auto;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -56,12 +56,36 @@ tr:last-child td {
     <hr>
 <?php
 $linguagens = [
-    "HTML" => "Estruturação",
-    "CSS" => "Estilos",
-    "JS" => "Comportamentos",
-    "PHP" => "Back-End",
-    "SQL" => "Manipulação de dados",
-    "Java" => "Softwares"
+    [
+        "id" => 1,
+        "nome" => "HTML",
+        "descricao" => "Estruturação"
+    ],
+    [
+        "id" => 2,
+        "nome" => "CSS",
+        "descricao" => "Estilos"
+    ],
+    [
+        "id" => 3,
+        "nome" => "JS",
+        "descricao" => "Comportamentos"
+    ],
+    [
+        "id" => 4,
+        "nome" => "PHP",
+        "descricao" => "Back-End"
+    ],
+    [
+        "id" => 5,
+        "nome" => "SQL",
+        "descricao" => "Manipulação de dados"
+    ],
+    [
+        "id" => 6,
+        "nome" => "Java",
+        "descricao" => "Softwares"
+    ],
 ];
 ?>
     <table class="tabela-estilizada">
@@ -75,18 +99,13 @@ $linguagens = [
         </thead>
         <tbody>
 
-<?php 
-$id = 1;
-foreach($linguagens as $linguagem => $descricao){
-?>
+<?php foreach($linguagens as $linguagem){ ?>
             <tr>
-                <td><?=$id++?></td>
-                <td><?=$linguagem?></td>
-                <td><?=$descricao?></td>
+                <td><?=$linguagem["id"]?></td>
+                <td><?=$linguagem["nome"]?></td>
+                <td><?=$linguagem["descricao"]?></td>                
             </tr>
-<?php 
-} 
-?>   
+<?php } ?>   
 
         </tbody>
     </table>
