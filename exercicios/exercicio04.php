@@ -22,18 +22,25 @@ $linguagens = [
         <caption>Linguagens</caption>
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Linguagem</th>
                 <th>Descrição</th>
             </tr>
         </thead>
         <tbody>
 
-<?php foreach($linguagens as $linguagem => $descricao){ ?>
+<?php 
+$id = 1;
+foreach($linguagens as $linguagem => $descricao){
+?>
             <tr>
+                <td><?=$id++?></td>
                 <td><?=$linguagem?></td>
                 <td><?=$descricao?></td>
             </tr>
-<?php } ?>   
+<?php 
+} 
+?>   
 
         </tbody>
     </table>
