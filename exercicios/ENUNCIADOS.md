@@ -1,5 +1,21 @@
 # Enunciados dos exercícios
 
+## Exercício 05 (Funções) - 11/02/2025
+ 
+- Crie três variáveis para representar as notas de um aluno
+- Calcule a média destas notas e verifique a situação do aluno (aprovado ou reprovado) - *o critério é ter média a partir de 7*
+ 
+🍼**Desafios moleza**👵
+ 
+1. Use duas **funções**: uma para isolar a lógica de cálculo da média, e outra para isolar a lógica de verificação da situação do aluno.
+2. Use recursos do CSS (ou Bootstrap) para formatar em vermelho caso reprovado, e azul caso aprovado.
+ 
+🔥**Desafio ferradão**😎
+ 
+- Adapte o exercício para que funcione com uma lista (array associativo) de 5 alunos.
+
+---
+
 ## Exercício 04 (Loop e Estrutura de Dados) - 06/02/2025
 Crie uma estrutura de dados (pode ser um array indexado, ou array associativo, ou array de objetos, ou matriz) com 6 nomes de linguagens e uma pequena descrição para cada.
  
