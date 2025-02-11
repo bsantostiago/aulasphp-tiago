@@ -87,6 +87,39 @@ function exibirSaudacao($mensagem, $pessoa = ""){
         <p>Mensagem 1: <?=exibirSaudacao("bom dia", "João Pedro")?> </p>
         <p>Mensagem 2: <?=exibirSaudacao("boa tarde")?> </p>
 
+        <hr>
+
+        <h2>Indução de tipos de dados</h2>
+<?php 
+/* Indicando que o parâmetro DEVE ser do tipo inteiro,
+e que o retorno da função DEVE ser do tipo string. */
+function verificarNegativo(int $valor):string {
+    if( $valor < 0 ){
+        return "é negativo";
+    } else {
+        return "não é negativo";
+    }
+}
+
+/* Tipos comuns para uso com indução
+string -> textos/caracteres em geral
+int -> números inteiros
+float -> números com casas decimais
+array -> vetor/matriz
+object -> objeto */
+?>   
+        <p>Número 10: <?=verificarNegativo(10)?></p>
+        <p>Número -10: 
+        <span class="badge text-bg-danger"><?=verificarNegativo(-10)?></span>
+        </p>
+
+        <!-- O código abaixo (tire os comentários se quiser testar) gera um erro
+         relacionado a indução de tipos (foi dado uma string e era esperado
+         um número inteiro) -->
+        <!-- <p>Teste de valor/parâmetro errado: 
+            <?=verificarNegativo("Paulo Henrique")?></p> 
+        -->
+
     </div>    
 
 
