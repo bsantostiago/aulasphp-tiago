@@ -16,12 +16,24 @@
         <p><i>Procedimentos <b>não retornam</b> nada.</i></p>
 <?php
 function exibirDadosDoAutor(){
-    echo "<h4>Fulano de Tal</h4>";
+    echo "<h4>Ozzy Osbourne</h4>";
     echo "<p><time>".date("d/m/Y")."</time></p>";
 }
 ?>
         <h3>Chamada do procedimento</h3>
-        <?=exibirDadosDoAutor()?>
+        <?php
+        $valor = 1500;
+        if($valor > 1000){
+            exibirDadosDoAutor();
+        }
+        ?>
+
+        <h3>Outras chamadas</h3>
+        <div><?=exibirDadosDoAutor()?></div>
+        <ul>
+            <li><?=exibirDadosDoAutor()?></li>
+            <li><b><?=exibirDadosDoAutor()?></b></li>
+        </ul>
 
         <hr>
     </div>    
