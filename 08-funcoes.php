@@ -94,11 +94,7 @@ function exibirSaudacao($mensagem, $pessoa = ""){
 /* Indicando que o parâmetro DEVE ser do tipo inteiro,
 e que o retorno da função DEVE ser do tipo string. */
 function verificarNegativo(int $valor):string {
-    if( $valor < 0 ){
-        return "é negativo";
-    } else {
-        return "não é negativo";
-    }
+    return $valor < 0 ? "é negativo" : "não é negativo";
 }
 
 /* Tipos comuns para uso com indução
