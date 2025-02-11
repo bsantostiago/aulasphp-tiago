@@ -117,12 +117,14 @@ object -> objeto */
         <span class="badge text-bg-danger"><?=verificarNegativo(-10)?></span>
         </p>
 
-        <!-- O código abaixo (tire os comentários se quiser testar) gera um erro
-         relacionado a indução de tipos (foi dado uma string e era esperado
-         um número inteiro) -->
+        <!-- O código abaixo (tire os comentários se quiser testar) gera um erro relacionado a indução de tipos (foi dado uma string e era esperado um número inteiro) -->
         <!-- <p>Teste de valor/parâmetro errado: 
-            <?=verificarNegativo("Paulo Henrique")?></p> 
+            <//?=verificarNegativo("Paulo Henrique")?></p> 
         -->
+
+        <hr>
+
+
 
     </div>    
 
