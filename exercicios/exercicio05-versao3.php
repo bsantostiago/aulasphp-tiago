@@ -15,7 +15,7 @@
 $aluno = "Marcio";
 $nota1 = 8.5;
 $nota2 = 5;
-$nota3 = 8.94;
+$nota3 = 9.94;
 
 function calcularMedia(float $valorNota1, float $valorNota2, float $valorNota3):float {
     $resultadoDaMedia = ($valorNota1 + $valorNota2 + $valorNota3) / 3;
@@ -24,19 +24,22 @@ function calcularMedia(float $valorNota1, float $valorNota2, float $valorNota3):
 
 function verificarSituacao(float $valorMedia):string {
     if($valorMedia >= 7){
-        return '<span class="badge text-bg-success">aprovado</span>';
+        return "aprovado";
     } else {
-        return '<span class="badge text-bg-danger">reprovado</span>';
+        return "reprovado";
     }
 }
 
 $media = calcularMedia($nota1, $nota2, $nota3);
 $situacao = verificarSituacao($media);
-
 ?>
         <h2><?=$aluno?></h2>
         <p>Média: <b><?=$media?></b></p>
-        <p>Situação: <b><?=$situacao?></b></p>
+        <p>Situação: 
+            <b class="badge text-bg-<?=$media >= 7 ? 'success' : 'danger'?>">
+                <?=$situacao?>
+            </b>
+        </p>
     </div>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
