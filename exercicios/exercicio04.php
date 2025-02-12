@@ -4,54 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 04 (ok)</title>
-    <style>
-       table {
-  width: 70%;
-  border-collapse: collapse;
-  margin: 20px auto;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Cabeçalho da tabela */
-th {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 15px;
-  text-align: left;
-  font-size: 1.1em;
-}
-
-/* Estilo das células */
-td {
-  background-color: #fff;
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-/* Efeito de alternância de cores nas linhas */
-tbody tr:nth-child(odd) {
-  background-color: #f9f9f9;
-}
-
-tbody tr:hover {
-  background-color: #f1f1f1;  /* Altera o fundo quando passar o mouse sobre a linha */
-  cursor: pointer;
-}
-
-/* Borda da tabela */
-table, th, td {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-/* Estilo para a última linha (sem borda inferior) */
-tr:last-child td {
-  border-bottom: none;
-}
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+<div class="container">
     <h1>Exercício 04 (ok)</h1>
     <hr>
 <?php
@@ -88,7 +44,7 @@ $linguagens = [
     ],
 ];
 ?>
-    <table class="tabela-estilizada">
+    <table class="table table-hover">
         <caption>Linguagens</caption>
         <thead>
             <tr>
@@ -109,6 +65,8 @@ $linguagens = [
 
         </tbody>
     </table>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
