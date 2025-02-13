@@ -101,6 +101,20 @@ $produtosUnicos = array_unique($produtos);
 ?>
         <pre><?=var_dump($produtos)?></pre>
         <pre><?=var_dump($produtosUnicos)?></pre>
+
+        
+        <h2>Numéricas</h2>
+        <h3><code>min(), max(), round()</code></h3>
+<?php
+// Vamos usar o mesmo array de valores criado mais acima...
+$valorQualquer = 1259.75;
+?>
+        <p>Menor valor: <?=min($valores)?></p>
+        <p>Maior valor: <?=max($valores)?></p>
+        <p>Arredondamento: <?=round($valorQualquer)?></p>
+        
+        
+
     </div>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
