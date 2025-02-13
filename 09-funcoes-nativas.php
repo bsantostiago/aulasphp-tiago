@@ -69,12 +69,12 @@ $aluno = [
     "nome" => "Chapolin Colorado",
     "idade" => 25
 ];
-
-extract($aluno);
+$nome = "teste";
+extract($aluno, EXTR_PREFIX_SAME, "chave");
 ?>  
         <ul>
             <li>ID: <?=$id?></li>
-            <li>Nome: <?=$nome?></li>
+            <li>Nome: <?=$chave_nome?></li>
             <li>Idade: <?=$idade?> anos.</li>
         </ul>
 
