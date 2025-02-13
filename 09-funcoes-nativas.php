@@ -23,6 +23,18 @@ $textoSemEspaco = trim($texto);
 <pre><?=var_dump($textoSemEspaco)?></pre>
         <hr>
 
+        <h3><code>str_replace()</code></h3>
+        <p>Permite substituir partes de uma string.</p>
+<?php
+$fraseFeia = "Esse Paulo é um bobão e xarope";
+$fraseBunitinha = str_replace(
+    ["bobão", "xarope"],
+    ["🤬", "🚨"],
+    $fraseFeia
+);
+?>
+        <p><?=$fraseFeia?></p>
+        <p><?=$fraseBunitinha?></p>
         
     </div>    
 
