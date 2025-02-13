@@ -51,7 +51,7 @@ $arrayLinguagens = explode(",", $textosLinguagens);
     <h2>Arrays</h2>
 
     <h3><code>implode()</code></h3>
-    <p>Transforma array indexado em string</p>
+    <p>Transforma array indexado em string.</p>
 <?php
 $arrayBandas = ["Rush", "Slayer", "Dio"];
 $textoBandas = implode(" - ", $arrayBandas);
