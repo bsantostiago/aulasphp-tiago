@@ -88,6 +88,19 @@ $total = array_sum($valores);
 ?>        
         <p>Soma dos valores do array: <b><?=$total?></b></p>
         
+        <hr>
+
+        <h3><code>array_unique()</code></h3>
+        <p>Retorna um novo array com dados <b>únicos</b></p>
+<?php
+$produtos = [
+    "TV", "Notebook", "TV", "Geladeira", "Monitor", "Mouse", "Notebook", "Webcam"
+];
+
+$produtosUnicos = array_unique($produtos);
+?>
+        <pre><?=var_dump($produtos)?></pre>
+        <pre><?=var_dump($produtosUnicos)?></pre>
     </div>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
