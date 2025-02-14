@@ -1,7 +1,12 @@
 </main>
-        
-        <footer>
+
+<?php
+date_default_timezone_set("America/Sao_Paulo");
+$dataHora = date("d/m/Y H:i");
+?>
+        <footer class="text-center">
             <p>Site criado para o curso Téc. Informática para Internet</p>
+            <p><time><?=$dataHora?></time></p>
         </footer>
     </div>    
 
