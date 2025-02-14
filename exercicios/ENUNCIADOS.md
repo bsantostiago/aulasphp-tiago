@@ -3,6 +3,11 @@
 ## Exercício 06 (na pasta 11-site) - 14/02/2025
  
 1. Adicione uma página de **Contato** ao site Exemplo
+    - Crie nela um pequeno formulário contendo:
+        - Nome
+        - E-mail
+        - Botão Enviar
+    - Use recursos do Bootstrap para estruturar/formatar o formulário
 2. Mostre no rodapé a **data** e **hora atual** usando programação PHP.
 3. Adicione livremente alguns recursos básicos do Bootstrap para formatação
  
