@@ -1,5 +1,24 @@
 # Enunciados dos exercícios
 
+## Exercício 06 (na pasta 11-site) - 14/02/2025
+ 
+1. Adicione uma página de **Contato** ao site Exemplo
+2. Mostre no rodapé a **data** e **hora atual** usando programação PHP.
+3. Adicione livremente alguns recursos básicos do Bootstrap para formatação
+ 
+🔥 **Desafio**: pesquise e programe um código PHP que permita identificar qual página está **aberta no momento** e, a partir disso, personalize o título de acordo com a página. 💡
+ 
+### Exemplos:
+
+- Está na index.php? Então mostre no `title`: Página Inicial - Site PHP
+- Está na cursos.php?   Então mostre no `title`: Treinamentos - Site PHP
+- Está na duvidas.php?  Então mostre no `title`: Dúvidas - Site PHP
+- Está na contato.php?  Então mostre no `title`: Contato - Site PHP
+
+
+
+---
+
 ## Exercício 05 (Funções) - 11/02/2025
  
 - Crie três variáveis para representar as notas de um aluno
