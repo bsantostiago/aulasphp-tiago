@@ -26,6 +26,9 @@ $mensagem = $_POST["mensagem"];
 // Solução 2: usando o operador de coalescência nula ??
 /* Se houver interesses, os armazene. Caso contrário, guarde array vazio. */
 $interesses = $_POST["interesses"] ?? [];
+
+// Capturando o radio
+$informativos = $_POST["informativos"];
 ?>
     <!-- Exibindo -->
     <h2>Dados:</h2>
@@ -33,6 +36,7 @@ $interesses = $_POST["interesses"] ?? [];
         <li>Nome: <?=$nome?> </li>
         <li>E-mail: <?=$email?> </li>
         <li>Idade: <?=$idade?> anos </li>
+        <li>Receber informativos: <?=$informativos?> </li>
         
 <!-- Usamos o empty com inversão de lógica (operador ! de negação).
 Portanto, se NÃO ESTÁ vazio, mostre os interesses. -->        
