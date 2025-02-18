@@ -34,6 +34,9 @@ $interesses = $_POST["interesses"] ?? [];
         <li>E-mail: <?=$email?> </li>
         <li>Idade: <?=$idade?> anos </li>
         
+<!-- Usamos o empty com inversão de lógica (operador ! de negação).
+Portanto, se NÃO ESTÁ vazio, mostre os interesses. -->        
+<?php if( !empty($interesses) ) { ?>
         <li>Interesses - usando <code>implode()</code>: 
             <?=implode(", ", $interesses)?> 
         </li>
@@ -45,6 +48,7 @@ $interesses = $_POST["interesses"] ?? [];
                 <?php } ?>
             </ul>
         </li>
+<?php } ?>        
 
         <li>Mensagem: <?=$mensagem?> </li>
     </ul>
