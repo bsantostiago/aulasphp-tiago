@@ -18,11 +18,12 @@ if( empty($_POST["nome"]) || empty($_POST["email"]) ){
 <?php
 } else {
 
-    // Capturando os dados transmitidos
-    $nome = $_POST["nome"];
-    $email = $_POST["email"];
-    $idade = $_POST["idade"];
-    $mensagem = $_POST["mensagem"];
+    // Capturando os dados transmitidos e sanitizá-los
+    $nome = filter_input(INPUT_POST, "nome", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+    $idade = filter_input(INPUT_POST, "idade", FILTER_SANITIZE_NUMBER_INT);
+    $mensagem = filter_input(
+        INPUT_POST, "mensagem", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     // Capturando os options
 
@@ -31,10 +32,16 @@ if( empty($_POST["nome"]) || empty($_POST["email"]) ){
 
     // Solução 2: usando o operador de coalescência nula ??
     /* Se houver interesses, os armazene. Caso contrário, guarde array vazio. */
-    $interesses = $_POST["interesses"] ?? [];
+    $interesses = filter_var_array(
+        $_POST["interesses"] ?? [], 
+        FILTER_SANITIZE_FULL_SPECIAL_CHARS
+    );
 
     // Capturando o radio
-    $informativos = $_POST["informativos"] ?? [];
+    $informativos = filter_var_array(
+        $_POST["informativos"] ?? [], 
+        FILTER_SANITIZE_FULL_SPECIAL_CHARS
+    );
     ?>
         <!-- Exibindo -->
         <h2>Dados:</h2>
