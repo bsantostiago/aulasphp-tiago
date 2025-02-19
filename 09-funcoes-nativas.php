@@ -29,7 +29,7 @@ $textoSemEspaco = trim($texto);
 $fraseFeia = "Esse Paulo é um bobão e xarope";
 $fraseBunitinha = str_replace(
     ["bobão", "xarope"],
-    ["🤬", "🚨"],
+    ["🤬", "🚨", "😍"],
     $fraseFeia
 );
 ?>
