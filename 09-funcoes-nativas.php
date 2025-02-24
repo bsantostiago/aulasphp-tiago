@@ -126,7 +126,10 @@ $emailCorreto = "tiago@provedor.com.br";
         <p><?=var_dump( filter_var($emailCorreto, FILTER_VALIDATE_EMAIL) )?></p>
         
         <hr>
-
+<?php
+$url = "https//www.exemplo.com";
+$urlValida = filter_var($url, FILTER_VALIDATE_URL);
+?>
         <h3>Sanitização</h3>
 <?php
 $ataqueDeRaqui = "<script>

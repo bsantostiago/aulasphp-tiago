@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP - Formulário de Exemplo</title>
+</head>
+<body>
+    <div>
+        <h1>Formulário básico</h1>
+        <hr>
+        <form action="processa.php" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input  type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input  type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" min="1" max="120">
+            </div>
+    
+            <div>
+                <p>Interesses:</p>
+                <input type="checkbox" name="interesses[]" id="html" value="HTML">
+                <label for="html">HTML</label>
+                
+                <input type="checkbox" name="interesses[]" id="css" value="CSS">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" name="interesses[]" id="js" value="JavaScript">
+                <label for="js">JS</label>
+            </div>
+
+            <div>
+                <p>Deseja receber informativos?</p>
+                
+                <input type="radio" name="informativos" id="sim" value="sim">
+                <label for="sim">Sim</label>
+                
+                <input type="radio" name="informativos" id="nao" value="nao">
+                <label for="nao">Não</label>
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
+            </div>
+            <button type="submit" name="enviar">Enviar dados</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
