@@ -1,4 +1,5 @@
-<?php require "recursos.php"; ?>
+<?php include "recursos.php"; ?>
+<?php include_once "recursos.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,13 +33,13 @@
             <h2>Título qualquer...</h2>
 
             <!-- Incluindo fragmento de HTML -->
-            <?php include "textos.html"; ?>
+            <?php include( "textos.php"); ?>
         </article>
 
     </div>    
 
     <!-- pra exemplificar o once -->
-    <?php require_once "recursos.php"; ?>
+   
     <p>O aluno Fulano de Tal tem 10 anos e é <?=verificarIdade(10)?> de idade</p>
 
 

@@ -3,6 +3,10 @@
 
 <p>bla bla bla</p>
 
-<!-- <?php include "lista.html"; ?> -->
+<?php 
+include "lista.html"; 
+// include "recursos.php";
+?>
 
+<p><?=$curso?></p>
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nostrum odio asperiores nemo quos alias?</p>
