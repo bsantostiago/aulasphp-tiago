@@ -1,0 +1,116 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/* Container principal */
+.container {
+    background: #fff;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Espaçamento entre os blocos */
+form div, .dados p {
+    margin-bottom: 15px;
+}
+
+/* Estilo dos labels */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Checkboxes e Radio Buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Botão de envio */
+button {
+    display: block;
+    width: 100%;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Mensagens de erro e sucesso */
+.erro {
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.sucesso {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo da exibição dos dados */
+.dados {
+    background: #eef;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Lista de erros */
+ul {
+    color: red;
+    margin: 10px 0;
+}

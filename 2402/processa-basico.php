@@ -4,41 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado do Formulário</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            max-width: 600px;
-            margin: auto;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            text-align: center;
-        }
-        .container {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .erro {
-            color: red;
-            font-weight: bold;
-        }
-        .sucesso {
-            color: green;
-            font-weight: bold;
-        }
-        ul {
-            color: red;
-        }
-        .dados {
-            background: #eef;
-            padding: 10px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style-form-processa.css">
 </head>
 <body>
 
@@ -58,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $interesses = $_POST['interesses'] ?? [];
     
     // Captura da opção sim ou não
-    $respostaInformativos = $_POST['informativos'] ?? "";    
+    $respostaInformativos = $_POST['informativos'] ?? "nao";    
 ?>
 
     <!-- tinha if/else aqui dos erros -->
