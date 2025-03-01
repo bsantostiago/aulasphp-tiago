@@ -11,7 +11,18 @@
     <div class="container">
         <h1>Trabalhando com funções</h1>
         <hr>
-
+<?php
+function saudacao2(string $nome, string $mensagem = "Olá") {
+        echo "$mensagem, $nome!";
+    }
+    
+    // Chamando com parâmetros nomeados
+    saudacao2(nome: "Tiago", mensagem: "Bom dia");
+    saudacao2(mensagem: "Boa noite", nome: "Bezerra");
+    saudacao2(nome: "Santos"); // Usa o valor padrão de $mensagem
+    
+?>
+        <hr>
         <h2>Função como procedimento (ou sub-rotina)</h2>
         <p><i>Procedimentos <b>não retornam</b> nada.</i></p>
 <?php

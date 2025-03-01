@@ -27,6 +27,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Captura dos interesses (checkbox) como array    
     $interessesValidos = ['HTML', 'CSS', 'JavaScript']; 
     $interesses = filter_input(INPUT_POST, 'interesses', FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY) ?? [];
+
+    if (!is_array($interesses)) {
+        $interesses = []; // Se não for array, define como um array vazio
+        $erros[] = "Seleção inválida de interesses";
+    }
+
     $interessesFiltrados = array_intersect($interesses, $interessesValidos);
     
     // Captura da opção sim ou não
@@ -45,13 +51,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $erros[] = "O e-mail informado não é válido.";
     }
 
-    if (!filter_var($idade, FILTER_VALIDATE_INT, ["options" => ["min_range" => 1, "max_range" => 120]])) {
+    if (!filter_var($idade, FILTER_VALIDATE_INT, [ "options" => ["min_range" => 1, "max_range" => 120] ])) {
         $erros[] = "Idade inválida. A idade deve estar entre 1 e 120.";
     }
 
     if (empty($mensagem)) {
         $erros[] = "O campo Mensagem não pode estar vazio.";
     }
+
+    /* if(!filter_var($interessesFiltrados, FILTER_VALIDATE_BOOL)){
+        $erros = "Interesse inválido";
+    } */
 
 ?>
 
