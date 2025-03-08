@@ -20,8 +20,8 @@ if (isset($_POST['cadastro'])) {
     /* cria um array $usuarios dentro do $_SESSION, cuja chave é o usuario e a senha o valor */
     $_SESSION['usuarios'][$usuario] = $hash;
     $mensagem = "Usuário cadastrado com sucesso!";
-    var_dump($_SESSION);
-    die();
+    /* var_dump($_SESSION);
+    die(); */
 }
 
 // Processa o login
